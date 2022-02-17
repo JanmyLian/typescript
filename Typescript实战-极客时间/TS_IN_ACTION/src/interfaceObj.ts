@@ -25,19 +25,19 @@ let result = {
 }
 render(result)
 // 如果直接传入对象字面量，ts会对额外的字段进行类型检查，
-// 两种方法避免，1.赋值给对象 ?2.类型断言 3.使用字符串索引签名[x: string]: any
+// 两种方法避免，1.赋值给对象 2.类型断言todo... 3.使用字符串索引签名[x: string]: any
 // render({
 //   data: [
 //     {id: 1, name: 'A', sex: 'male'}
 //   ]
 // }) // error 
-// ???
+// todo...
 // render(<Result>{
 //   data: [
 //     {id: 1, name: 'A', sex: 'male'}
 //   ]
 // }) 
-// ???
+// todo...
 // render({
 //   data: [
 //     {id: 1, name: 'A', sex: 'male'}

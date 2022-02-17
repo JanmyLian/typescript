@@ -6,7 +6,7 @@
 // }
 // 此外也可以用类型别名
 type Add = (x: number, y: number) => number
-let add: Add = (a, b) => a + b
+let addInterface: Add = (a, b) => a + b
 // 用混合接口定义类库
 interface Lib {
   ():void;
