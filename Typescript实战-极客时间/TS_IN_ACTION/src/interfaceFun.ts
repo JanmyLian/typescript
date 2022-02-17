@@ -8,3 +8,19 @@
 type Add = (x: number, y: number) => number
 let add: Add = (a, b) => a + b
 // 用混合接口定义类库
+interface Lib {
+  ():void;
+  version: string;
+  doSomeThing(): void;
+}
+function getLib() {
+  let lib: Lib = (()=>{}) as Lib;
+  lib.version = '1.0';
+  lib.doSomeThing = ()=>{}
+  return lib;
+}
+
+let lib1 = getLib();
+lib1();
+lib1.doSomeThing();
+let lib2 = getLib();
