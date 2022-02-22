@@ -35,3 +35,4 @@ function add8(...rest:any[]):any{
     return rest.reduce((pre,cur) => pre+cur)
   }
 }
+
